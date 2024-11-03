@@ -1,0 +1,89 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.CurrentLoanViewModel>
+
+@{
+    ViewBag.Title = "Current Loans Report";
+
+    // Group by BookName and count loans for each book on the server side
+    var loanCounts = Model.GroupBy(m => m.BookName)
+                          .Select(g => g.Count())
+                          .ToArray();
+
+    // Distinct Book Names for labels
+    var bookNames = Model.Select(m => m.BookName).Distinct().ToArray();
+}
+
+<h2 class="text-center">Current Loans Report</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Student Name</th>
+                        <th>Taken Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var loan in Model)
+                    {
+                        <tr>
+                            <td>@loan.BookName</td>
+                            <td>@loan.StudentName</td>
+                            <td>@loan.TakenDate?.ToString("yyyy-MM-dd")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="row">
+        <div class="col-md-12">
+            <canvas id="currentLoansChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="text-right mb-3">
+    <a href="@Url.Action("SaveCurrentLoansReport", "Reports")" class="btn btn-primary">
+        Save as PDF
+    </a>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('currentLoansChart').getContext('2d');
+
+        // Pass server-side data to JavaScript
+        var bookNames = @Html.Raw(Json.Encode(bookNames));
+        var loanCounts = @Html.Raw(Json.Encode(loanCounts));
+
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: bookNames,  // Use the book names
+                datasets: [{
+                    label: 'Current Loans',
+                    data: loanCounts, // Use the counted values
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+}

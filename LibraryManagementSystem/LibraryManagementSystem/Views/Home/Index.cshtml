@@ -1,0 +1,244 @@
+﻿@model Tuple<IEnumerable<LibraryManagementSystem.Models.book>, IEnumerable<LibraryManagementSystem.Models.student>>
+
+@{
+    ViewBag.Title = "Home";
+    var totalPagesBooks = (int)Math.Ceiling((double)ViewBag.TotalBooks / ViewBag.PageSize);
+    var totalPagesStudents = (int)Math.Ceiling((double)ViewBag.TotalStudents / ViewBag.PageSize);
+}
+
+<h2 class="text-center">Library Management System</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Books</h3>
+            <p>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#createBookModal">Create New Book</button>
+            </p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.Item1.First().name)</th>
+                        <th>@Html.DisplayNameFor(model => model.Item1.First().pagecount)</th>
+                        <th>@Html.DisplayNameFor(model => model.Item1.First().point)</th>
+                        <th>@Html.DisplayNameFor(model => model.Item1.First().author.name)</th>
+                        <th>@Html.DisplayNameFor(model => model.Item1.First().type.name)</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var book in Model.Item1)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => book.name)</td>
+                            <td>@Html.DisplayFor(modelItem => book.pagecount)</td>
+                            <td>@Html.DisplayFor(modelItem => book.point)</td>
+                            <td>@Html.DisplayFor(modelItem => book.author.name)</td>
+                            <td>@Html.DisplayFor(modelItem => book.type.name)</td>
+                            <td>
+                                @{
+                                    // Determine the status of the book
+                                    var isBorrowed = Model.Item1.Any(b => b.bookId == book.bookId && b.borrows.Any());
+                                }
+                                @if (isBorrowed)
+                                {
+                                    <span class="text-danger">Out</span>
+                                }
+                                else
+                                {
+                                    <span class="text-success">Available</span>
+                                }
+                            </td>
+                            <td>@Html.ActionLink("Details", "Details", "Books", new { id = book.bookId }, null)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <!-- Pagination for Books -->
+            <nav aria-label="Books pagination">
+                <ul class="pagination justify-content-center">
+                    @if (ViewBag.CurrentPage > 1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1 })" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    }
+
+                    @for (int i = 1; i <= totalPagesBooks; i++)
+                    {
+                        if (i == ViewBag.CurrentPage)
+                        {
+                            <li class="page-item active"><a class="page-link" href="#">@i</a></li>
+                        }
+                        else if (i > ViewBag.CurrentPage - 2 && i < ViewBag.CurrentPage + 10)
+                        {
+                            <li class="page-item"><a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a></li>
+                        }
+                    }
+
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1 })" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col-md-6">
+            <h3>Students</h3>
+            <p>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#createStudentModal">Create New Student</button>
+            </p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.Item2.First().name)</th>
+                        <th>@Html.DisplayNameFor(model => model.Item2.First().surname)</th>
+                        <th>@Html.DisplayNameFor(model => model.Item2.First().birthdate)</th>
+                        <th>@Html.DisplayNameFor(model => model.Item2.First().gender)</th>
+                        <th>@Html.DisplayNameFor(model => model.Item2.First().@class)</th>
+                        <th>@Html.DisplayNameFor(model => model.Item2.First().point)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var student in Model.Item2)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => student.name)</td>
+                            <td>@Html.DisplayFor(modelItem => student.surname)</td>
+                            <td>@Html.DisplayFor(modelItem => student.birthdate)</td>
+                            <td>@Html.DisplayFor(modelItem => student.gender)</td>
+                            <td>@Html.DisplayFor(modelItem => student.@class)</td>
+                            <td>@Html.DisplayFor(modelItem => student.point)</td>
+                            <td>@Html.ActionLink("Details", "Details", "Students", new { id = student.studentId }, null)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <!-- Pagination for Students -->
+            <nav aria-label="Students pagination">
+                <ul class="pagination justify-content-center">
+                    @if (ViewBag.CurrentPage > 1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1 })" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    }
+
+                    @for (int i = 1; i <= totalPagesStudents; i++)
+                    {
+                        if (i == ViewBag.CurrentPage)
+                        {
+                            <li class="page-item active"><a class="page-link" href="#">@i</a></li>
+                        }
+                        else if (i > ViewBag.CurrentPage - 2 && i < ViewBag.CurrentPage + 10)
+                        {
+                            <li class="page-item"><a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a></li>
+                        }
+                    }
+
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1 })" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- Create Book Modal -->
+<div class="modal fade" id="createBookModal" tabindex="1" role="dialog" aria-labelledby="createBookModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createBookModalLabel">Create New Book</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @using (Html.BeginForm("CreateBook", "Books", FormMethod.Post, new { id = "createBookForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Item1.First().name)
+                        @Html.TextBoxFor(m => m.Item1.First().name, new { @class = "form-control", placeholder = "Book Name" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Item1.First().pagecount)
+                        @Html.TextBoxFor(m => m.Item1.First().pagecount, new { @class = "form-control", placeholder = "Page Count" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Item1.First().point)
+                        @Html.TextBoxFor(m => m.Item1.First().point, new { @class = "form-control", placeholder = "Point" })
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Author")
+                        @Html.DropDownList("authorId", new SelectList(ViewBag.Authors, "authorId", "name"), "Select Author", new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Type")
+                        @Html.DropDownList("typeId", new SelectList(ViewBag.Types, "typeId", "name"), "Select Type", new { @class = "form-control" })
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create Student Modal -->
+<div class="modal fade" id="createStudentModal" tabindex="-1" role="dialog" aria-labelledby="createStudentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createStudentModalLabel">Create New Student</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @using (Html.BeginForm("CreateStudent", "Students", FormMethod.Post, new { id = "createStudentForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Item2.First().name)
+                        @Html.TextBoxFor(m => m.Item2.First().name, new { @class = "form-control", placeholder = "Student Name" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Item2.First().surname)
+                        @Html.TextBoxFor(m => m.Item2.First().surname, new { @class = "form-control", placeholder = "Student Surname" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Item2.First().birthdate)
+                        @Html.TextBoxFor(m => m.Item2.First().birthdate, "{0:yyyy-MM-dd}", new { @class = "form-control", placeholder = "Birthdate" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Item2.First().gender)
+                        @Html.TextBoxFor(m => m.Item2.First().gender, new { @class = "form-control", placeholder = "Gender" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Item2.First().@class)
+                        @Html.TextBoxFor(m => m.Item2.First().@class, new { @class = "form-control", placeholder = "Class" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Item2.First().point)
+                        @Html.TextBoxFor(m => m.Item2.First().point, new { @class = "form-control", placeholder = "Point" })
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>

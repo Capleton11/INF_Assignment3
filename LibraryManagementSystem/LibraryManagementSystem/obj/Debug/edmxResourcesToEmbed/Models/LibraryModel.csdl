@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="author">
+    <Key>
+      <PropertyRef Name="authorId" />
+    </Key>
+    <Property Name="authorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="surname" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="books" Relationship="Self.FK_books_authors" FromRole="authors" ToRole="books" />
+  </EntityType>
+  <EntityType Name="book">
+    <Key>
+      <PropertyRef Name="bookId" />
+    </Key>
+    <Property Name="bookId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="pagecount" Type="Int32" />
+    <Property Name="point" Type="Int32" />
+    <Property Name="authorId" Type="Int32" />
+    <Property Name="typeId" Type="Int32" />
+    <NavigationProperty Name="author" Relationship="Self.FK_books_authors" FromRole="books" ToRole="authors" />
+    <NavigationProperty Name="type" Relationship="Self.FK_books_types" FromRole="books" ToRole="types" />
+    <NavigationProperty Name="borrows" Relationship="Self.FK_borrows_books" FromRole="books" ToRole="borrows" />
+  </EntityType>
+  <EntityType Name="borrow">
+    <Key>
+      <PropertyRef Name="borrowId" />
+    </Key>
+    <Property Name="borrowId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="studentId" Type="Int32" />
+    <Property Name="bookId" Type="Int32" />
+    <Property Name="takenDate" Type="DateTime" Precision="3" />
+    <Property Name="broughtDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="book" Relationship="Self.FK_borrows_books" FromRole="borrows" ToRole="books" />
+    <NavigationProperty Name="student" Relationship="Self.FK_borrows_students" FromRole="borrows" ToRole="students" />
+  </EntityType>
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="studentId" />
+    </Key>
+    <Property Name="studentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="surname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="birthdate" Type="DateTime" Precision="0" />
+    <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="class" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="point" Type="Int32" />
+    <NavigationProperty Name="borrows" Relationship="Self.FK_borrows_students" FromRole="students" ToRole="borrows" />
+  </EntityType>
+  <EntityType Name="type">
+    <Key>
+      <PropertyRef Name="typeId" />
+    </Key>
+    <Property Name="typeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="books" Relationship="Self.FK_books_types" FromRole="types" ToRole="books" />
+  </EntityType>
+  <Association Name="FK_books_authors">
+    <End Role="authors" Type="Self.author" Multiplicity="0..1" />
+    <End Role="books" Type="Self.book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="authors">
+        <PropertyRef Name="authorId" />
+      </Principal>
+      <Dependent Role="books">
+        <PropertyRef Name="authorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_books_types">
+    <End Role="types" Type="Self.type" Multiplicity="0..1" />
+    <End Role="books" Type="Self.book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="types">
+        <PropertyRef Name="typeId" />
+      </Principal>
+      <Dependent Role="books">
+        <PropertyRef Name="typeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_borrows_books">
+    <End Role="books" Type="Self.book" Multiplicity="0..1" />
+    <End Role="borrows" Type="Self.borrow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="books">
+        <PropertyRef Name="bookId" />
+      </Principal>
+      <Dependent Role="borrows">
+        <PropertyRef Name="bookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_borrows_students">
+    <End Role="students" Type="Self.student" Multiplicity="0..1" />
+    <End Role="borrows" Type="Self.borrow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="students">
+        <PropertyRef Name="studentId" />
+      </Principal>
+      <Dependent Role="borrows">
+        <PropertyRef Name="studentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LibraryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="authors" EntityType="Self.author" />
+    <EntitySet Name="books" EntityType="Self.book" />
+    <EntitySet Name="borrows" EntityType="Self.borrow" />
+    <EntitySet Name="students" EntityType="Self.student" />
+    <EntitySet Name="types" EntityType="Self.type" />
+    <AssociationSet Name="FK_books_authors" Association="Self.FK_books_authors">
+      <End Role="authors" EntitySet="authors" />
+      <End Role="books" EntitySet="books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_books_types" Association="Self.FK_books_types">
+      <End Role="types" EntitySet="types" />
+      <End Role="books" EntitySet="books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_borrows_books" Association="Self.FK_borrows_books">
+      <End Role="books" EntitySet="books" />
+      <End Role="borrows" EntitySet="borrows" />
+    </AssociationSet>
+    <AssociationSet Name="FK_borrows_students" Association="Self.FK_borrows_students">
+      <End Role="students" EntitySet="students" />
+      <End Role="borrows" EntitySet="borrows" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

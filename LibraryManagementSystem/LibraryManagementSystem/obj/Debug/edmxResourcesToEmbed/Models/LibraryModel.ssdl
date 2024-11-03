@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="authors">
+    <Key>
+      <PropertyRef Name="authorId" />
+    </Key>
+    <Property Name="authorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="surname" Type="varchar" MaxLength="70" />
+  </EntityType>
+  <EntityType Name="books">
+    <Key>
+      <PropertyRef Name="bookId" />
+    </Key>
+    <Property Name="bookId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="90" />
+    <Property Name="pagecount" Type="int" />
+    <Property Name="point" Type="int" />
+    <Property Name="authorId" Type="int" />
+    <Property Name="typeId" Type="int" />
+  </EntityType>
+  <EntityType Name="borrows">
+    <Key>
+      <PropertyRef Name="borrowId" />
+    </Key>
+    <Property Name="borrowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="studentId" Type="int" />
+    <Property Name="bookId" Type="int" />
+    <Property Name="takenDate" Type="datetime" />
+    <Property Name="broughtDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="students">
+    <Key>
+      <PropertyRef Name="studentId" />
+    </Key>
+    <Property Name="studentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="20" />
+    <Property Name="surname" Type="varchar" MaxLength="20" />
+    <Property Name="birthdate" Type="date" />
+    <Property Name="gender" Type="varchar" MaxLength="10" />
+    <Property Name="class" Type="varchar" MaxLength="7" />
+    <Property Name="point" Type="int" />
+  </EntityType>
+  <EntityType Name="types">
+    <Key>
+      <PropertyRef Name="typeId" />
+    </Key>
+    <Property Name="typeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <Association Name="FK_books_authors">
+    <End Role="authors" Type="Self.authors" Multiplicity="0..1" />
+    <End Role="books" Type="Self.books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="authors">
+        <PropertyRef Name="authorId" />
+      </Principal>
+      <Dependent Role="books">
+        <PropertyRef Name="authorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_books_types">
+    <End Role="types" Type="Self.types" Multiplicity="0..1" />
+    <End Role="books" Type="Self.books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="types">
+        <PropertyRef Name="typeId" />
+      </Principal>
+      <Dependent Role="books">
+        <PropertyRef Name="typeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_borrows_books">
+    <End Role="books" Type="Self.books" Multiplicity="0..1" />
+    <End Role="borrows" Type="Self.borrows" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="books">
+        <PropertyRef Name="bookId" />
+      </Principal>
+      <Dependent Role="borrows">
+        <PropertyRef Name="bookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_borrows_students">
+    <End Role="students" Type="Self.students" Multiplicity="0..1" />
+    <End Role="borrows" Type="Self.borrows" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="students">
+        <PropertyRef Name="studentId" />
+      </Principal>
+      <Dependent Role="borrows">
+        <PropertyRef Name="studentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LibraryModelStoreContainer">
+    <EntitySet Name="authors" EntityType="Self.authors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="books" EntityType="Self.books" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="borrows" EntityType="Self.borrows" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="students" EntityType="Self.students" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="types" EntityType="Self.types" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_books_authors" Association="Self.FK_books_authors">
+      <End Role="authors" EntitySet="authors" />
+      <End Role="books" EntitySet="books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_books_types" Association="Self.FK_books_types">
+      <End Role="types" EntitySet="types" />
+      <End Role="books" EntitySet="books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_borrows_books" Association="Self.FK_borrows_books">
+      <End Role="books" EntitySet="books" />
+      <End Role="borrows" EntitySet="borrows" />
+    </AssociationSet>
+    <AssociationSet Name="FK_borrows_students" Association="Self.FK_borrows_students">
+      <End Role="students" EntitySet="students" />
+      <End Role="borrows" EntitySet="borrows" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

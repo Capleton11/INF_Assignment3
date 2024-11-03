@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibraryModelStoreContainer" CdmEntityContainer="LibraryEntities">
+    <EntitySetMapping Name="authors">
+      <EntityTypeMapping TypeName="LibraryModel.author">
+        <MappingFragment StoreEntitySet="authors">
+          <ScalarProperty Name="authorId" ColumnName="authorId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="books">
+      <EntityTypeMapping TypeName="LibraryModel.book">
+        <MappingFragment StoreEntitySet="books">
+          <ScalarProperty Name="bookId" ColumnName="bookId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="pagecount" ColumnName="pagecount" />
+          <ScalarProperty Name="point" ColumnName="point" />
+          <ScalarProperty Name="authorId" ColumnName="authorId" />
+          <ScalarProperty Name="typeId" ColumnName="typeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="borrows">
+      <EntityTypeMapping TypeName="LibraryModel.borrow">
+        <MappingFragment StoreEntitySet="borrows">
+          <ScalarProperty Name="borrowId" ColumnName="borrowId" />
+          <ScalarProperty Name="studentId" ColumnName="studentId" />
+          <ScalarProperty Name="bookId" ColumnName="bookId" />
+          <ScalarProperty Name="takenDate" ColumnName="takenDate" />
+          <ScalarProperty Name="broughtDate" ColumnName="broughtDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="students">
+      <EntityTypeMapping TypeName="LibraryModel.student">
+        <MappingFragment StoreEntitySet="students">
+          <ScalarProperty Name="studentId" ColumnName="studentId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="class" ColumnName="class" />
+          <ScalarProperty Name="point" ColumnName="point" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="types">
+      <EntityTypeMapping TypeName="LibraryModel.type">
+        <MappingFragment StoreEntitySet="types">
+          <ScalarProperty Name="typeId" ColumnName="typeId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

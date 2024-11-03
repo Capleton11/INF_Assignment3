@@ -1,0 +1,405 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\capleton\\desktop\\inf272\\librarymanagementsystem\\librarymanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\views\\reports\\currentloansreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\reports\\currentloansreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\controllers\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\models\\currentloanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\currentloanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\controllers\\maintaincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\maintaincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\views\\maintain\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\maintain\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\models\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\controllers\\typescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\typescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\controllers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\views\\students\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\students\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\views\\students\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\students\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\librarymanagementsystem\\models\\librarymodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{C6FCBCDA-A383-4E76-B8F4-6BEAA3C8C35E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\librarymodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "borrow.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\borrow.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\borrow.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\borrow.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\borrow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:04:31.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T18:59:28.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CurrentLoansReport.cshtml",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\CurrentLoansReport.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Reports\\CurrentLoansReport.cshtml",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Reports\\CurrentLoansReport.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Reports\\CurrentLoansReport.cshtml",
+              "ViewState": "AQIAACAAAAAAAAAAAAAswFkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T12:42:37.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Global.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\Global.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\Global.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\Global.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\Global.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T18:25:43.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\ReportsController.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\ReportsController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAmwE4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T12:20:40.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CurrentLoanViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\CurrentLoanViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\CurrentLoanViewModel.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\CurrentLoanViewModel.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\CurrentLoanViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T13:29:06.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MaintainController.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\MaintainController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\MaintainController.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\MaintainController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\MaintainController.cs",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAqwNIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T21:38:30.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T18:54:13.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Web.config",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Web.config",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Web.config",
+              "RelativeToolTip": "LibraryManagementSystem\\Web.config",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwEYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-25T18:22:08.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Maintain\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Maintain\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Maintain\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Maintain\\Index.cshtml",
+              "ViewState": "AQIAADIAAAAAAAAAAAAQwGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T21:40:18.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAAAHsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T19:13:02.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\HomeViewModel.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\HomeViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T19:03:21.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\BookViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\BookViewModel.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\BookViewModel.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\BookViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T19:10:12.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "studentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\studentsController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\studentsController.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\studentsController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\studentsController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T19:25:43.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "borrowsController.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\borrowsController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\borrowsController.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\borrowsController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\borrowsController.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAIwIkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T19:25:09.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "typesController.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\typesController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\typesController.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\typesController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\typesController.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAIwIAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T19:26:14.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "authorsController.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\authorsController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\authorsController.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\authorsController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\authorsController.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAIwIAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T19:24:00.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\students\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\students\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\students\\Edit.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\students\\Edit.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADcAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T20:11:52.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\students\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\students\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\students\\Details.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\students\\Details.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T20:11:40.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\students\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\students\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\students\\Delete.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\students\\Delete.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T20:11:28.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\students\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\students\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\students\\Create.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\students\\Create.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADUAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T20:10:54.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\students\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Views\\students\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Views\\students\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagementSystem\\Views\\students\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T20:12:11.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "booksController.cs",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\booksController.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Controllers\\booksController.cs",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Controllers\\booksController.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Controllers\\booksController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T19:24:31.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LibraryModel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\LibraryModel.edmx",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\LibraryModel.edmx",
+              "ToolTip": "C:\\Users\\Capleton\\Desktop\\INF272\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\LibraryModel.edmx [Diagram1]",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\LibraryModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-10-25T18:38:43.759Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
